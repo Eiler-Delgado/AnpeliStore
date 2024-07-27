@@ -46,7 +46,7 @@ header{
 }
 
 .logo h1 {
-    font-size: 1.875rem;
+    font-size: 1.5625rem;
     text-decoration: none;
     font-family: 'cursive3';
 }
@@ -153,4 +153,147 @@ header{
         color: var(--color-secundario); 
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+    .promocion  h4{
+        font-size: 22px;
+    }
 }
+
+.slider-box{
+    width: 1200px;
+    height: auto;
+    margin: 10px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-box li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin: left 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+@media (max-width:991px){
+    .slider-box{
+        width: 100%;
+    }
+}
+
+.promocion{
+    background-color: var(--color-acento);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 170px;
+    }
+    
+.etiqueta-promocion {
+    margin: 20px; 
+    color: var(--color-secundario);
+    font-size: 25px;
+    font-family: cursive;
+    }
+    
+.slider-promociones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    }
+
+    .slider-promociones{
+    width: 1200px;
+    height: auto;
+    margin: 10px auto 0;
+    overflow: hidden;
+    display: flex;
+    padding: 0;
+    width:200%;
+    animation: slide 20s infinite alternate ease-in-out;
+    }
+    
+    /* Define la estructura del slider para promociones */
+.slider-box-promociones {
+    width: 1200px;
+    height: auto;
+    margin: 10px auto 0;
+    overflow: hidden;
+}
+
+.slider-box-promociones ul {
+    display: flex;
+    padding: 0;
+    width: 400%; /* Ajusta este valor según el número de elementos */
+    animation: slide-promociones 15s infinite alternate ease-in-out;
+}
+
+.slider-box-promociones li {
+    width: 100%;
+    list-style: none;
+}
+
+@keyframes slide-promociones {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.promocion {
+    background-color: var(--color-acento);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 170px;
+    padding: 20px; 
+}
+
+.etiqueta-promocion {
+    margin: 20px;
+    color: var(--color-secundario);
+    font-size: 25px;
+    font-family: cursive;
+}
+
+@media (max-width: 991px) {
+    .slider-box-promociones {
+        width: 100%;
+    }
+}
+
+
+    
+    
+

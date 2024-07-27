@@ -1,33 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos Anpeli</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-<body>
-    <header>
-        <a class="linklogo" href="#">
-        <div class="logo">
-            <img  src="image/logoAnpeli.jpg" alt="logo">
-            <h1>AnpeliStore</h1>
-        </div>
-        </a>
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"  style="font-size: 2.5rem; color: cornflowerblue;"></i></button>
-        <nav id="nav" class="nav">
-            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-square" style="font-size: 2.5rem;"></i></button>
-            <ul class="nav-list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contáctame</a></li>
-                <li><a href="#">Sobre Mi</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Anpeli Store</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <a class="linklogo" href="#">
+                <div class="logo">
+                    <img src="image/logoAnpeli.jpg" alt="logo" />
+                    <h1>AnpeliStore</h1>
+                </div>
+            </a>
+            <button id="abrir" class="abrir-menu">
+                <i
+                    class="bi bi-list"
+                    style="font-size: 2.5rem; color: cornflowerblue"
+                ></i>
+            </button>
+            <nav id="nav" class="nav">
+                <button id="cerrar" class="cerrar-menu">
+                    <i class="bi bi-x-square" style="font-size: 2.5rem"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contáctame</a></li>
+                    <li><a href="#">Sobre Mi</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="slider-box">
+                <ul>
+                    <li>
+                        <img
+                            src="image/imagenCarrusel1.webp"
+                            alt="imagenCarrusel1"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="image/imagenCarrusel2.webp"
+                            alt="imagenCarrusel2"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="image/imagenCarrusel1.webp"
+                            alt="imagenCarrusel3"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="image/imagenCarrusel2.webp"
+                            alt="imagenCarrusel4"
+                        />
+                    </li>
+                </ul>
+            </div>
 
+            <!-- Nuevo slider de promociones -->
+            <div class="slider-box-promociones">
+                <ul>
+                    <li>
+                        <div class="promocion">
+                            <i class="bi bi-tags" style="font-size: 2rem; color: cornflowerblue;"></i>
+                            <h4 class="etiqueta-promocion">TUS PRODUCTOS FAVORITOS AVON Y NATURA</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="promocion">
+                            <i class="bi bi-currency-dollar" style="font-size: 2rem; color: cornflowerblue;"></i>
+                            <h4 class="etiqueta-promocion">PAGA CON TRANQUILIDAD</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="promocion">
+                            <i class="bi bi-hand-thumbs-up" style="font-size: 2rem; color: cornflowerblue;"></i>
+                            <h4 class="etiqueta-promocion">PRODUCTOS DE CALIDAD GARANTIZADA</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="promocion">
+                            <i class="bi bi-truck"" style="font-size: 2rem; color: cornflowerblue;"></i>
+                            <h4 class="etiqueta-promocion">ENVIOS SEGUROS</h4>
+                        </div>
+                    </li> 
+                </ul>
+            </div>
+            
+        </main>
 
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
